@@ -3,5 +3,5 @@
 # url:blog.unclezs.com
 
 git add -A . 
-git commit -m "$0"
+git commit -m "$1"
 git push git@github.com:unclezs/uncle-novel-official-site.git
