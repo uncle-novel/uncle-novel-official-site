@@ -1,11 +1,11 @@
 #!/bin/bash
 # author:unclesz
 # url:blog.unclezs.com
-
+set -e
 # 编译 上传到 page分支进行自动部署
-
 npm run build
-cd docs/.verpress/dist
+cp -r static/ docs/.vuepress/dist/
+cd docs/.vuepress/dist
 git init
 git add -A .
 git commit -m "$1"
@@ -13,6 +13,7 @@ git remote add origin git@github.com:unclezs/uncle-novel-official-site.git
 git branch page
 git push -f -u origin page
 cd -
+
 # 源码上传到main
 
 git add -A . 
