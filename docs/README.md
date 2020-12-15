@@ -19,5 +19,5 @@ features:
   details: 只需要一个目录即可下载一本小说，无需额外去找书源进行配置
 - title: 灵活下载
   details: 自定义控制下载线程与延迟，针对网站进行调整，达到快速稳定下载
-footer: Copyright © 2018-present Unclezs
+footer: Copyright © 2018-2021 Unclezs
 ---
