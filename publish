@@ -7,8 +7,11 @@
 npm run build
 cd docs/.verpress/dist
 git init
-git commit -m "$1" --author unclezs
-git push -u origin page git@github.com:unclezs/uncle-novel-official-site.git
+git add -A .
+git commit -m "$1"
+git remote add origin git@github.com:unclezs/uncle-novel-official-site.git
+git branch page
+git push -f -u origin page
 cd -
 # 源码上传到main
 
