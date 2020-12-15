@@ -2,6 +2,17 @@
 # author:unclesz
 # url:blog.unclezs.com
 
+# 编译 上传到 page分支进行自动部署
+
+npm run build
+cd docs/.verpress/dist
+git init
+git commit -m "$1" --author unclezs
+git push -u origin page git@github.com:unclezs/uncle-novel-official-site.git
+cd -
+# 源码上传到main
+
 git add -A . 
-git commit -m "$1"
-git push git@github.com:unclezs/uncle-novel-official-site.git
+git commit -m "$1" --author unclezs
+git push -u origin main
+
