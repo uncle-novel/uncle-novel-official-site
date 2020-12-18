@@ -5,13 +5,13 @@ module.exports = {
     sidebar: {
       '/documents/booksource/':[
         '',
-        'a',
-        'b'
+        '章节一',
+        '章节二'
       ],
       '/documents/usage/':[
         '',
-        'a',
-        'b'
+        '章节一',
+        '章节二'
       ],
     },
     smoothScroll: true,
@@ -24,7 +24,8 @@ module.exports = {
           { text: '书源教程', link: '/documents/booksource/' }
         ]
       },
-      { text: 'github', link: 'https://github.com/unclezs/NovelHarvester' },
+      { text: 'Github', link: 'https://github.com/unclezs/NovelHarvester' },
+      { text: '博客', link: 'https://blog.unclezs.com' },
     ]
   }
 }

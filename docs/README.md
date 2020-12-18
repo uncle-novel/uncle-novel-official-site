@@ -6,12 +6,8 @@ tagline: 一个全网小说下载器，给我一个目录网址还你一小说�
 actionText: 快速上手 →
 actionLink: /zh/guide/
 actions:
-- text: 书源制作
-  link: /zh/guide/
-- text: 下载软件
-  link: /zh/guide/
-- text: 支持作者
-  link: /zh/guide/
+- text:  快速上手 →
+  link: /documents/booksource/
 features:
 - title: 跨平台
   details: Windows、MacOS、Linux三平台通用，采用Java编写。

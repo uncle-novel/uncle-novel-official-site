@@ -8,7 +8,9 @@ cp -r static/ docs/.vuepress/dist/
 cd docs/.vuepress/dist
 git init
 git add -A .
-git commit -m "$1"
+git config user.name "unclezs"
+git config user.email "1585503310@qq.com"
+git commit -a -m "$1" --branch
 git remote add origin git@github.com:unclezs/uncle-novel-official-site.git
 git branch page
 git push -f -u origin page
