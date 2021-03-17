@@ -3,15 +3,14 @@ module.exports = {
   description: '一个能够下载下载小说的APP',
   themeConfig: {
     sidebar: {
-      '/documents/booksource/':[
+      '/tutorials/booksource/': [
         '',
         '章节一',
         '章节二'
       ],
-      '/documents/usage/':[
+      '/tutorials/usage/mp/': [
         '',
-        '章节一',
-        '章节二'
+        '基本教程',
       ],
     },
     smoothScroll: true,
@@ -20,8 +19,10 @@ module.exports = {
       {
         text: '教程',
         items: [
-          { text: '使用教程', link: '/documents/usage/' },
-          { text: '书源教程', link: '/documents/booksource/' }
+          { text: 'PC', link: '/tutorials/usage/pc/' },
+          { text: '小程序', link: '/tutorials/usage/mp/' },
+          { text: 'Android', link: '/tutorials/usage/android/' },
+          { text: '书源教程', link: '/tutorials/booksource/' }
         ]
       },
       { text: 'Github', link: 'https://github.com/unclezs/NovelHarvester' },

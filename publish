@@ -3,13 +3,13 @@
 # url:blog.unclezs.com
 set -e
 # 编译 上传到 page分支进行自动部署
-npm run build
+npm run b
 cp -r static/ docs/.vuepress/dist/
 cd docs/.vuepress/dist
 git init
 git add -A .
 git config user.name "unclezs"
-git config user.email "1585503310@qq.com"
+git config user.email "unclezs@qq.com"
 git commit -a -m "$1" --branch
 git remote add origin git@github.com:unclezs/uncle-novel-official-site.git
 git branch page
