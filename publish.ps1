@@ -1,11 +1,10 @@
 #!/bin/bash
-# author:unclesz
+# author:unclezs
 # url:blog.unclezs.com
-set -e
 # 编译 上传到 page分支进行自动部署
 npm run b
-cp -r static/ docs/.vuepress/dist/
-cd docs/.vuepress/dist
+Copy-Item -Recurse  -Path "./static/*"  -Destination "./docs/.vuepress/dist/" -Force
+Set-Location docs/.vuepress/dist
 git init
 git add -A .
 git config user.name "unclezs"
@@ -14,11 +13,11 @@ git commit -a -m "$1" --branch
 git remote add origin git@github.com:unclezs/uncle-novel-official-site.git
 git branch page
 git push -f -u origin page
-cd -
+Set-Location ../../../
 
 # 源码上传到main
 
 git add -A . 
-git commit -m "$1"
+git commit -m $args[0]
 git push -u origin main
 

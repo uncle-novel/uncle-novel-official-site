@@ -12,6 +12,10 @@ module.exports = {
         '',
         '基本教程',
       ],
+      '/commnon/': [
+        '',
+        'disclaimers',
+      ],
     },
     smoothScroll: true,
     nav: [
