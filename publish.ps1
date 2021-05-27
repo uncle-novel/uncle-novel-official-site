@@ -15,6 +15,8 @@ git branch page
 git push -f -u origin page
 Set-Location ../../../
 
+rsync -avz --chmod 777 ./docs/.vuepress/dist/ root@uncle-novel.unclezs.com:/www/wwwroot/app.unclezs.com/
+
 # 源码上传到main
 
 git add -A . 
