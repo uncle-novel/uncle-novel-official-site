@@ -1,36 +1,52 @@
-module.exports = {
+module.exports = ctx => ({
   title: 'Uncle小说',
   description: '一个能够下载下载小说的APP',
   themeConfig: {
+    repo: 'unclezs/uncle-novel-official-site',
+    repoLabel: '查看源码',
+    docsRepo: 'unclezs/uncle-novel-official-site',
+    docsDir: 'docs',
+    docsBranch: 'main',
+    editLinks: true,
+    editLinkText: '在 GitHub 上编辑此页',
+    lastUpdated: '上次更新',
+    // 搜索配置
+    search: true,
+    searchMaxSuggestions: 10,
+    // 最近更新
+    smoothScroll: true,
+    nav: require('./nav'),
     sidebar: {
-      '/tutorials/booksource/': [
-        '',
-        '章节一',
-        '章节二'
-      ],
-      '/tutorials/usage/mp/': [
+      '/booksource/': getBookSourceSidebar(),
+      '/usage/mp/': [
         '',
         '基本教程',
       ],
-      '/commnon/': [
-        '',
-        'disclaimers',
-      ],
+      '/commnon/': getCommonSidebar(),
     },
-    smoothScroll: true,
-    nav: [
-      { text: '主页', link: '/' },
-      {
-        text: '教程',
-        items: [
-          { text: 'PC', link: '/tutorials/usage/pc/' },
-          { text: '小程序', link: '/tutorials/usage/mp/' },
-          { text: 'Android', link: '/tutorials/usage/android/' },
-          { text: '书源教程', link: '/tutorials/booksource/' }
-        ]
-      },
-      { text: 'Github', link: 'https://github.com/unclezs/NovelHarvester' },
-      { text: '博客', link: 'https://blog.unclezs.com' },
-    ]
   }
+})
+
+function getBookSourceSidebar() {
+  return [
+    {
+      title: "书源教程",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        ['', "介绍"],
+        'quick-start',
+        'format',
+        'common-rule',
+      ]
+    }
+  ]
 }
+
+function getCommonSidebar() {
+  return [
+    '',
+    'disclaimers',
+  ]
+}
+
