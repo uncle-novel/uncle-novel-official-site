@@ -1,12 +1,11 @@
 {
-  "name": "vuepress-sample",
+  "name": "uncle-novel-official-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "t": "echo \"Error: no test specified\" && exit 1",
-    "s": "vuepress dev docs",
-    "b": "vuepress build docs"
+    "server": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "author": "",
   "license": "ISC",
