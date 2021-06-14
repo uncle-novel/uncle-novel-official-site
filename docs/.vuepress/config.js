@@ -3,7 +3,7 @@ module.exports = ctx => ({
   description: '一个能够下载下载小说的APP',
   themeConfig: {
     repo: 'unclezs/uncle-novel-official-site',
-    repoLabel: '查看源码',
+    repoLabel: '本站源码',
     docsRepo: 'unclezs/uncle-novel-official-site',
     docsDir: 'docs',
     docsBranch: 'main',
@@ -18,10 +18,7 @@ module.exports = ctx => ({
     nav: require('./nav'),
     sidebar: {
       '/booksource/': getBookSourceSidebar(),
-      '/usage/mp/': [
-        '',
-        '基本教程',
-      ],
+      '/usage/mp/': getMpSidebar(),
       '/commnon/': getCommonSidebar(),
     },
   }
@@ -51,4 +48,12 @@ function getCommonSidebar() {
     'disclaimers',
   ]
 }
+
+function getMpSidebar() {
+  return [
+    '',
+  ]
+}
+
+
 

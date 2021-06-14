@@ -4,7 +4,6 @@
 set -e
 # 编译 上传到 page分支进行自动部署
 npm run b
-cp -r static/ docs/.vuepress/dist/
 cd docs/.vuepress/dist
 git init
 git add -A .

@@ -8,7 +8,5 @@ module.exports = [
       { text: '安卓版', link: '/usage/android/' },
     ]
   },
-  { text: '书源教程', link: '/booksource/' },
-  { text: 'Github', link: 'https://github.com/unclezs/NovelHarvester' },
-  { text: '博客', link: 'https://blog.unclezs.com' },
+  { text: '书源教程', link: '/booksource/' }
 ]

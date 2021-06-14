@@ -3,7 +3,6 @@
 # url:blog.unclezs.com
 # 编译 上传到 page分支进行自动部署
 npm run b
-Copy-Item -Recurse  -Path "./static/*"  -Destination "./docs/.vuepress/dist/" -Force
 # Set-Location docs/.vuepress/dist
 # git init
 # git add -A .
