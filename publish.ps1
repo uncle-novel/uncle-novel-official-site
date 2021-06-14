@@ -2,7 +2,7 @@
 # author:unclezs
 # url:blog.unclezs.com
 # 编译 上传到 page分支进行自动部署
-npm run b
+npm run build
 # Set-Location docs/.vuepress/dist
 # git init
 # git add -A .
