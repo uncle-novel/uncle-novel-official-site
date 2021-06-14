@@ -35,9 +35,11 @@ function getBookSourceSidebar() {
       sidebarDepth: 2,
       children: [
         ['', "介绍"],
-        'quick-start',
         'format',
-        'common-rule',
+        'rule-introduce',
+        'advanced',
+        'script',
+        'debug',
       ]
     }
   ]
