@@ -19,6 +19,7 @@ module.exports = ctx => ({
     sidebar: {
       '/booksource/': getBookSourceSidebar(),
       '/usage/mp/': getMpSidebar(),
+      '/usage/pc/': getPcSidebar(),
       '/commnon/': getCommonSidebar(),
     },
   }
@@ -55,5 +56,17 @@ function getMpSidebar() {
   ]
 }
 
-
-
+function getPcSidebar() {
+  return [
+    {
+      title: "PC版文档",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        ['', "介绍"],
+        'changelog',
+        'versions',
+      ]
+    }
+  ]
+}
