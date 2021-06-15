@@ -2,9 +2,9 @@
 home: true
 heroImage: /icon-128.png
 heroText: Uncle小说
-tagline: 为了简单，所以简洁
-actionText: 快速上手 →
-actionLink: /zh/guide/
+tagline: 欢迎关注微信公众号：书虫无书荒
+actionText: 使用指南 →
+actionLink: /guide/pc/
 footer: Copyright © 2018-2021 Unclezs
 ---
 
