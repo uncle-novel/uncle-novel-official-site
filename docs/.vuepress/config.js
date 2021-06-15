@@ -1,5 +1,5 @@
 module.exports = ctx => ({
-  title: 'Uncle小说',
+  title: '📚Uncle小说',
   description: '一个能够下载下载小说的APP',
   themeConfig: {
     repo: 'unclezs/uncle-novel-official-site',
