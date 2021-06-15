@@ -94,7 +94,7 @@ description:
 | 名称        | 类型      | 含义              | 可选值                       | 必填 |
 |-----------|---------|-----------------|---------------------------|----|
 | dynamic   | Boolean | 全局动态网页（WebView） | true则将启用动态网页，如抓取目录源码、正文源码 | 否  |
-| cookie    | String  | 全局Cookie，用于模拟登陆 | Cookie，可以查看 [Cookie抓取教程](/booksource/cookie.html)           | 否  |
+| cookie    | String  | 全局Cookie，用于模拟登陆 | Cookie，可以查看 [Cookie抓取教程](/guide/pc/skills.html#获取Cookie)           | 否  |
 | userAgent | String  | 全局User-Agent    | true则启用规则                 | 否  |
 
 ### 目录规则

@@ -18,9 +18,10 @@ module.exports = ctx => ({
     nav: require('./nav'),
     sidebar: {
       '/booksource/': getBookSourceSidebar(),
-      '/usage/mp/': getMpSidebar(),
-      '/usage/pc/': getPcSidebar(),
+      '/guide/mp/': getMpSidebar(),
+      '/guide/pc/': getPcSidebar(),
       '/commnon/': getCommonSidebar(),
+      '/qa/': getQaSidebar(),
     },
   }
 })
@@ -64,9 +65,16 @@ function getPcSidebar() {
       sidebarDepth: 2,
       children: [
         ['', "介绍"],
+        'skills',
         'changelog',
         'versions',
       ]
     }
+  ]
+}
+
+function getQaSidebar() {
+  return [
+    ["", "常见问题"]
   ]
 }
