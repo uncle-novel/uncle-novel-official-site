@@ -5,7 +5,7 @@ heroText: Uncle小说
 tagline: 欢迎关注微信公众号：书虫无书荒
 actionText: 使用指南 →
 actionLink: /guide/pc/
-footer: Copyright © 2018-2021 Unclezs
+footer: Copyright © 2018-2021 Unclezs | 渝ICP备18013963号-2
 ---
 
 <div class="features">
