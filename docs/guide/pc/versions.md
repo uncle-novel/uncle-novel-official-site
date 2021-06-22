@@ -4,9 +4,13 @@ title: 版本发布
 
 ## V5.0
 
-发布时间：待定
+发布时间：2021/6/21
 
 <img width="700" height="500" src="https://gitee.com/unclezs/image-blog/raw/master/20210615113841.png"/>
+
+**下载地址**
+- [前往下载](https://t.1yb.co/tDxv)
+
 
 ## V4.0
 
