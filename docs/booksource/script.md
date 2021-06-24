@@ -5,7 +5,9 @@ description:
 
 ## 基本概念
 
-脚本的作用是采用JS脚本进行对匹配后的结果进行预处理
+脚本的作用是对匹配后的结果进行二次处理。
+
+比如有声小说，我们获取到的正文可能是网页的源码，然后通过预处理脚本对源码进行二次处理，最终找到真实音频链接。
 
 ## 内置变量
 
@@ -15,7 +17,7 @@ description:
 
 ## 内置工具
 
-工具为utils.xx形式调用
+工具为utils.xx形式调用，可以方便的实现请求的发送，匹配器调用，绝对路径拼接。
 
 ```java
 // HTTP请求
@@ -65,3 +67,60 @@ dataJs = dataJs.replaceAll(",urlinfo.+?;", ";result = VideoListJson;");
 var VideoListJson = eval(dataJs);
 result = VideoListJson[params[0]][1][params[1]].split("$")[1];
 ```
+
+3.具体例子
+
+**实例**
+
+目标：获取章节链接时，把章节链接从相对链接变为绝对链接。
+如： `/booksource/script.html -> https://app.unclezs.com/booksource/script.html`
+假设当前目录地址为： https://app.unclezs.com/booksource/
+目录规则为：
+```json
+"toc": {
+  "list": "//*[@id="app"]/div[1]/aside/ul/li/section/ul/li",
+  "name": "text()",
+  "url": "@href",
+},
+```
+
+取匹配后《预处理脚本》章节进行举例，匹配结果为
+```js
+name = 预处理脚本
+url = /booksource/script.html
+```
+如果url的规则包含js脚本，那么脚本中的初始变量为
+```js
+result = /booksource/script.html
+source = 网址https://app.unclezs.com/booksource/的HTML源码
+url = https://app.unclezs.com/booksource/
+```
+此时我们通过脚本将匹配结果`/booksource/script.html`转化为绝对链接。脚本如下：
+```js
+result = utils.absUrl(url,result);
+```
+在章节链接规则中加入上述脚本后的匹配结果为：
+```js
+name = 预处理脚本
+url = https://app.unclezs.com/booksource/script.html
+```
+
+完整的规则如下：
+```json
+"toc": {
+  "list": "//*[@id="app"]/div[1]/aside/ul/li/section/ul/li",
+  "name": "text()",
+  "url": {
+    "rule":"@href",
+    "script": "result = utils.absUrl(url,result);"
+  },
+},
+```
+
+## 注意
+
+处理完成后需要将脚本进行JSON转义再放入规则，可以使用在线转义：[JSON转义](https://www.sojson.com/yasuo.html)
+
+## 调试工具
+
+书源管理里面的最下面的调试工具进行调试
