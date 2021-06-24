@@ -26,6 +26,7 @@ description:
 utils.get(String url);
 utils.post(String url, String body);
 utils.request(String paramsJson);
+utils.toJson(Object obj);
 /**
   * 匹配单个结果，同规则项一致
   * eg: xpath://xxx
@@ -50,9 +51,11 @@ var reqParams = {
     },
     method: "GET"
 }
-var html = utils.request(JSON.stringify(reqParams));
+// 此处不能使用JSON.stringify，否则Andorid端不兼容
+var html = utils.request(utils.toJson(reqParams));
 result = html
 ```
+JSON.stringify只可用户纯js对象，不能用于js与java混合的，如上的reqParams就只能使用内置工具的toJson而不能使用JSON.stringify。
 
 ## 具体写法
 
@@ -134,11 +137,14 @@ url = https://app.unclezs.com/booksource/script.html
 
 ## 注意
 
-处理完成后需要将脚本进行JSON转义再放入规则，可以使用在线转义：[JSON转义](https://www.sojson.com/yasuo.html)
+- 处理完成后需要将脚本进行JSON转义再放入规则，可以使用在线转义：[JSON转义](https://www.sojson.com/yasuo.html)，或者在调试工具中复制转义后的脚本。
+- JSON.stringify只能用于纯Js对象，不可用于Java对象与Js对象混合的，实例可见[内置工具](/booksource/script.html#内置工具)
 
 ## 调试工具
 
 书源管理里面的最下面的调试工具进行调试
+
+
 
 
 ## 附录
@@ -147,14 +153,13 @@ url = https://app.unclezs.com/booksource/script.html
 
 可以对照着调用方法进行调用，其中属性的通用方法为调用方式为
 
-- `getXxx`
-- `setXxx`
+- `param.xxx`
 
 可以在js中这么调用
 
 ```js
-params.getMethod();
-params.setMethod("POST");
+params.method;
+params.headers.Cookie;
 params.getHeader("Cookie");
 params.addHeader("Referer","https://app.unclezs.com");
 ```
