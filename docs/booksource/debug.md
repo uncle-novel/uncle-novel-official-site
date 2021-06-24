@@ -6,3 +6,7 @@ title: 书源调试
 
 <img src="https://gitee.com/unclezs/image-blog/raw/master/20210614235952.png"/>
 
+
+## 注意
+
+- 在脚本调试时，params字段只可以填写[params字段对应的java类](/booksource/script.html#params字段对应的java类)中的字段。
