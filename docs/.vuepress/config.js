@@ -36,6 +36,7 @@ function getBookSourceSidebar() {
         ['', "介绍"],
         'format',
         'rule-introduce',
+        'search',
         'advanced',
         'script',
         'debug',
