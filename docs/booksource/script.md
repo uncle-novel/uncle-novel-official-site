@@ -14,6 +14,8 @@ description:
 - url 当前网页的URL，如在目录规则里面即为当前小说的目录地址
 - source 当前网页的源码，如在目录规则里面即为当前小说的目录地址的网页源码
 - result 规则匹配后的结果，如小说标题规则中，这里取到的就是小说匹配后的标题
+- params 当前的请求参数，在js的读取值时需要采用java方法调用的方式。如获取Cookie可以采用`params.getHeader("Cookie")`。具体见附录[params字段对应的java类](/booksource/script.html#params字段对应的java类)
+
 
 ## 内置工具
 
@@ -37,7 +39,20 @@ utils.match(String src, String withTypeRule);
 utils.absUrl(String baseUrl, String relativePath);
 ```
 
-`utils.request(String paramsJson);`中的paramsJson格式为 [请求参数](/booksource/format.html#请求参数)
+`utils.request(String paramsJson);`中的paramsJson格式为 [请求参数](/booksource/format.html#请求参数)，举例：
+
+```js
+var reqParams = {
+    url: url,
+    headers: {
+        "Referer": url,
+        "Cookie": params.getHeader("Cookie")
+    },
+    method: "GET"
+}
+var html = utils.request(JSON.stringify(reqParams));
+result = html
+```
 
 ## 具体写法
 
@@ -124,3 +139,89 @@ url = https://app.unclezs.com/booksource/script.html
 ## 调试工具
 
 书源管理里面的最下面的调试工具进行调试
+
+
+## 附录
+
+### Params字段对应的Java类
+
+可以对照着调用方法进行调用，其中属性的通用方法为调用方式为
+
+- `getXxx`
+- `setXxx`
+
+可以在js中这么调用
+
+```js
+params.getMethod();
+params.setMethod("POST");
+params.getHeader("Cookie");
+params.addHeader("Referer","https://app.unclezs.com");
+```
+
+```java
+public class RequestParams implements Verifiable, Serializable {
+  /**
+   * 请求链接
+   */
+  private String url;
+  /**
+   * 请求方法
+   */
+  private String method;
+  /**
+   * 网页编码
+   */
+  private String charset;
+  /**
+   * 请求头
+   */
+  private Map<String, String> headers;
+  /**
+   * 请求方式
+   */
+  private String mediaType;
+  /**
+   * 请求体
+   */
+  private String body;
+  /**
+   * 是否为动态网页
+   */
+  private Boolean dynamic;
+
+  /**
+   * 获取请求头
+   *
+   * @param headerName  名称
+   * @param defaultName 默认值
+   * @return 请求头
+   */
+  public String getHeader(String headerName, String defaultName) {}
+
+  /**
+   * 获取请求头
+   *
+   * @param headerName 名称
+   * @return 请求头
+   */
+  public String getHeader(String headerName) {}
+
+  /**
+   * 设置请求头 存在则覆盖
+   *
+   * @param headerName  名称
+   * @param headerValue 值
+   */
+  public void setHeader(String headerName, String headerValue) {}
+
+  /**
+   * 设置请求头 如果不存在则设置 存在则忽略
+   *
+   * @param headerName  名称
+   * @param headerValue 值
+   */
+  public void addHeader(String headerName, String headerValue) {}
+}
+
+```
