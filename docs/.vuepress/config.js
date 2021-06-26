@@ -37,8 +37,9 @@ function getBookSourceSidebar() {
         'format',
         'rule-introduce',
         'search',
-        'advanced',
         'script',
+        'replace',
+        'advanced',
         'debug',
       ]
     }

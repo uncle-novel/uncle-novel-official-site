@@ -162,7 +162,7 @@ description:
 {
   "type": "String",
   "rule": "String",
-  "purifyRules": [
+  "replace": [
     {
       "regex": "String",
       "template": "String"
@@ -180,7 +180,7 @@ description:
 |-------------|--------|------------|----------------------------------------------------------------------------|----|
 | type        | String | 规则类型       | 【css,regex,json,xpath,auto】，其中xpath为//开头和jsonpath规则如果以$.开头可默认不填写type | 是  |
 | rule        | String | 规则内容       | 规则类型对应的规则内容                                                                | 是  |
-| purifyRules | Array  | 替换净化规则（正则） | 可以多条，其中替换模板，$1代表第一组 类推                                                     | 否  |
+| replace | Array  | 替换净化规则（正则） | 可以多条，其中替换模板，$1代表第一组 类推                                                     | 否  |
 | script      | String | JS预处理脚本    | 规则匹配后进行预处理的JS脚本. [查看教程](/booksource/script.html)                               | 否  |
 
 ## 请求参数
