@@ -80,12 +80,13 @@ description:
 
 ### 基本信息
 
+
 | 名称      | 类型      | 含义                 | 可选值                    | 必填 |
 |---------|---------|--------------------|------------------------|----|
 | name    | String  | 书源名称，一般为网站名称       | 网站名称，如笔趣阁              | 是  |
-| site    | String  | 网站的网址              | 网址，如https://novel.com/ | 是  |
+| site    | String  | 书源的网址，书源的唯一标识符，不可重复, 以/结尾              | 网址，如https://novel.com/ | 是  |
 | group   | String  | 书源分组               | 分组，如默认                 | 否  |
-| enabled | Boolean | 是否启用书源             | true则启用规则              | 是  |
+| enabled | Boolean | 是否启用书源，不启用则不会被用于搜索             | true则启用规则              | 是  |
 | audio   | Boolean | 是否为有声小说书源          | true则为有声小说书源           | 否  |
 | weight  | Number  | 书源权重，在搜索时，权重高则优先搜索 | 权重数值                   | 否  |
 
@@ -105,16 +106,16 @@ description:
 | list       | [规则项](/booksource/format.html#规则项)   | 章节列表规则，匹配章节节点列表，后续的name于url在其基础上进行匹配 | 是  |
 | name       | [规则项](/booksource/format.html#规则项)   | 章节名称规则                               | 是  |
 | url        | [规则项](/booksource/format.html#规则项)   | 章节链接规则                               | 是  |
-| next       | [规则项](/booksource/format.html#规则项)   | 下一页规则                                | 否  |
-| enableNext | Boolean                              | 允许翻页                                 | 否  |
-| filter     | Boolean                              | 章节过滤                                 | 否  |
-| autoNext   | Boolean                              | 自动翻页                                 | 否  |
-| forceNext  | Boolean                              | 强制翻页，忽略网页标题过滤，强制采用规则匹配结果             | 否  |
+| next       | [规则项](/booksource/format.html#规则项)   | 下一页规则，匹配到下一页的URL即可，会采用标题网页区分是否属于同一本小说                                | 否  |
+| enableNext | Boolean                              | 允许翻页，启用后才会进行翻页                                 | 否  |
+| filter     | Boolean                              | 章节过滤，无书源模式解析时，有时因章节太少而过滤掉了真正的章节，此时禁用即可获取到全真正的章节，书源模式下可直接禁用                                 | 否  |
+| autoNext   | Boolean                              | 自动翻页，启用翻页后，是否允许自动翻页。                                 | 否  |
+| forceNext  | Boolean                              | 强制翻页，忽略网页标题限制是否为同一本书的章节的策略，强制采用规则匹配结果的下一页链接进行翻页。             | 否  |
 | sort       | Boolean                              | 乱序重排(对页内的章节进行排序)                     | 否  |
 
 ### 详情规则
 
-详情规则用于网站不能搜索，但是想要目录解析时能够获取站点的封面时可以定义。
+详情规则用于网站不能搜索，但是想要目录解析时能够获取站点的封面时可以定义。规则类型应统一，否则不能够正确获取结果，比如用了xpath就全部用xpath。
 
 | 名称                | 类型                                   | 含义       | 必填 |
 |-------------------|--------------------------------------|----------|----|
@@ -134,13 +135,21 @@ description:
 
 ### 正文规则
 
+正文规则默认可不填写，采用默认的自动解析的模式进行匹配结果，默认有三种匹配模式：
+
+- auto:1，推荐模式
+- auto:2，段落模式
+- auto:3，全文模式
+
+
 | 名称          | 类型      | 含义           | 必填 |
 |-------------|---------|--------------|----|
 | params      | [请求参数](/booksource/format.html#请求参数)   | 请求参数         | 否  |
 | enableNext  | Boolean | 是否启用翻页       | 否  |
-| removeTitle | Boolean | 是否移除正文中头部的标题 |  否  |
+| removeTitle | Boolean | 是否移除正文中首行的标题 |  否  |
 | content     | [规则项](/booksource/format.html#规则项)  | 正文规则         |  是  |
-| next        | [规则项](/booksource/format.html#规则项)  | 下一页规则        |  否  |
+| next        | [规则项](/booksource/format.html#规则项)  | 下一页规则，匹配到下一页的URL即可，会采用标题网页区分是否属于同一章节        |  否  |
+| traditionToSimple     | Boolean  | 正文繁体转为简体         |  否  |
 
 ### 搜索规则
 
