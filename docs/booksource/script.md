@@ -26,6 +26,7 @@ description:
 utils.get(String url);
 utils.post(String url, String body);
 utils.request(String paramsJson);
+// 字符串转换为JSON
 utils.toJson(Object obj);
 /**
   * 匹配单个结果，同规则项一致
@@ -36,6 +37,15 @@ utils.toJson(Object obj);
   * @return 匹配结果
 */
 utils.match(String src, String withTypeRule);
+/**
+  * 匹配单个结果，同规则项一致
+  * eg: xpath://xxx
+  *
+  * @param src          匹配目标内容
+  * @param withTypeRule 带类型的规则 type:rule
+  * @return 匹配结果列表（可能是节点列表）
+*/
+utils.matchList(String src, String withTypeRule);
 // 拼接相对URL为完整的的URL
 utils.absUrl(String baseUrl, String relativePath);
 ```

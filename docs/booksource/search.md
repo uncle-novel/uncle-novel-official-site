@@ -55,3 +55,4 @@ https://xxx.com/search_{{keyword}}/{{page}}
 },
 ```
 
+**注意：**如果page为详情页，那么rule应该是一个完整的rule，不应该是基于列表的相对规则
