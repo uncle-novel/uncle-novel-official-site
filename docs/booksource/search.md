@@ -46,17 +46,82 @@ https://xxx.com/search_{{keyword}}/{{page}}
 
 有时候小说详情信息直接在搜索结果页码就可以取到，有时候是个单独的详情页面，这个时候如果想要取到详情信息则需要查看本节。
 
-1. 编写详情页规则，匹配结果为详情页URL（从搜索结果列表中）
-2. 编写详情信息时，区分详情页(detail)与搜索结果页(search)，不填写默认为详情页（如果详情页规则未填写则默认从搜索结果页匹配）
+<img src="https://gitee.com/unclezs/image-blog/raw/master/20210626224743.png" width="400"/>
+
+1. 编写**详情页面**规则，匹配结果为详情页URL（从搜索结果列表中）
+2. 编写详情信息的各项规则时（标题、作者、封面等），需要通过page字段区分，规则是针对**详情页面**编写的还是针对搜索结果页面编写的，`page=detail`则代表**详情页面**的规则，`page=search`就代表搜索页的规则.
+3. 如果**详情页面**规则未填写则默认从搜索结果页(search)匹配
+
 ```json
-"coverUrl": {
+"url": {
     "rule": "xpath:/body/div[3]/ul",
     "page": "search 或者 detail",
 },
 ```
 
+总的来说：
+- 如果规则是基于搜索结果的列表的，那么需要将规则中的page写为search。并且规则是基于搜索结果列表节点的**相对规则**。 
+- 如果规则是基于自定义详情页面的，那么需要将规则中的page写为detail（或者不写）。并且规则是基于详情页的规则。
+
 **注意**
 
-如果page指定为详情页，那么rule应该是一个相对于详情页完整的rule，不应该是基于列表的相对规则。
+1. 如果`page=search`时，编写的详情规则（标题、作者、封面等）时，需要时相对于搜索结果列表节点的相对规则，如：目录规则匹配了所有a标签，那么规则应该针对a标签编写：
+    ```json
+    {
+        "list": "xpath://div//a",
+        "url": {
+            "page": "search",
+            "rule": "@href"
+        }
+    }
+    ```
+2. 注意此处的详情规则是搜索规则中的小说信息的规则，不是[详情规则](/booksource/format.html#详情规则)。
+3. 规则类型必须**保持一致**，小说列表用了xpath，那么搜索规则中的其他规则都需要用xpath编写
 
-注意此处的详情规则是搜索规则中的小说信息的规则，不是[详情规则](/booksource/format.html#详情规则)。
+
+## 例子
+
+```json
+"search": {
+    "params": {
+      "url": "https://m.xxx.net/s.php",
+      "method": "POST",
+      "charset": "GBK",
+      "mediaType": "application/x-www-form-urlencoded",
+      "body": "type=articlename&s={{keyword}}&submit="
+    },
+    "list": {
+      "type": "//",
+      "rule": "//p[@class=\"line\"]"
+    },
+    "detailPage": {
+      "type": "//",
+      "rule": "///a[2]/@href "
+    },
+    "detail": {
+      "url": {
+        "page": "search",
+        "type": "xpath",
+        "rule": "/a[2]/@href"
+      },
+      "title": {
+        "page": "search",
+        "type": "xpath",
+        "rule": "//div[@class=\"block_txt2\"]/h2/a/text()"
+      },
+      "author": {
+        "page": "search",
+        "type": "xpath",
+        "rule": "//div[@class=\"block_txt2\"]/p[3]/text()"
+      },
+      "category": {
+        "type": "xpath",
+        "rule": "//div[@class=\"block_txt2\"]/p[4]/a/text()"
+      },
+      "introduce": {
+        "type": "xpath",
+        "rule": "//div[@class=\"intro_info\"]/text()"
+      },
+    }
+  }
+```
