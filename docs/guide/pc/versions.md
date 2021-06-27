@@ -9,7 +9,9 @@ title: 版本发布
 <img width="700" height="500" src="https://gitee.com/unclezs/image-blog/raw/master/20210615113841.png"/>
 
 **下载地址**
-- [前往下载](https://t.1yb.co/tDxv)
+- [github release](https://github.com/unclezs/NovelHarvester/releases)
+- [百度网盘 - 提取码：9999](https://pan.baidu.com/s/11a62y0v6uUzcVROKjS_-Rw) 
+- [天翼云盘 - 提取码：1bap](https://cloud.189.cn/t/fEjiimNF7773) 
 
 
 ## V4.0
