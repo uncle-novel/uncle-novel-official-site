@@ -152,7 +152,7 @@ url = https://app.unclezs.com/booksource/script.html
 
 ## 调试工具
 
-书源管理里面的最下面的调试工具进行调试
+使用PC端书源编辑器的最下面的 **调试工具** 进行调试。
 
 ## 附录
 
