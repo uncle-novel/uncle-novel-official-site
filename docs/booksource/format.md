@@ -17,9 +17,9 @@ description:
   "weight": Number,
   "params": {
     "dynamic": Boolean,
-    "enabledProxy": Boolean,
     "cookie": "String",
-    "userAgent": "String"
+    "userAgent": "String",
+    "autoReferer": Boolean,
   },
   "toc": {
     "params": 请求参数,
@@ -31,12 +31,14 @@ description:
     "filter": Boolean,
     "autoNext": Boolean,
     "forceNext": Boolean,
-    "sort": Boolean
+    "sort": Boolean,
+    "reverse": Boolean,
   },
   "content": {
     "params": 请求参数,
     "enableNext": Boolean,
     "removeTitle": Boolean,
+    "traditionToSimple": Boolean,
     "content": 规则项,
     "next": 规则项,
   },
@@ -97,7 +99,7 @@ description:
 | dynamic   | Boolean | 全局动态网页（WebView） | true则将启用动态网页，如抓取目录源码、正文源码 | 否  |
 | cookie    | String  | 全局Cookie，用于模拟登陆 | Cookie，可以查看 [Cookie抓取教程](/guide/pc/skills.html#获取Cookie)           | 否  |
 | userAgent | String  | 全局User-Agent    | true则启用规则                 | 否  |
-
+| autoReferer | Boolean  | 自动添加防盗链    | true则添加                 | 否  |
 ### 目录规则
 
 | 名称         | 类型                                   | 含义                                   | 必填 |
@@ -112,6 +114,7 @@ description:
 | autoNext   | Boolean                              | 自动翻页，启用翻页后，是否允许自动翻页。                                 | 否  |
 | forceNext  | Boolean                              | 强制翻页，忽略网页标题限制是否为同一本书的章节的策略，强制采用规则匹配结果的下一页链接进行翻页。             | 否  |
 | sort       | Boolean                              | 乱序重排(对页内的章节进行排序)                     | 否  |
+| reverse       | Boolean                              | 章节逆序                     | 否  |
 
 ### 详情规则
 
@@ -181,7 +184,8 @@ description:
       "template": "替换模板"
     }
   ],
-  "script": "String"
+  "script": "String",
+  "page": "String",
 }
 ```
 
@@ -191,6 +195,7 @@ description:
 | rule        | String | 规则内容       | 规则类型对应的规则内容                                                                | 是  |
 | replace | Array  | 替换净化规则（正则） | 可以多条，其中替换模板，$1代表第一组 类推                                                     | 否  |
 | script      | String | JS预处理脚本    | 规则匹配后进行预处理的JS脚本. [查看教程](/booksource/script.html)                               | 否  |
+| page      | String | 规则对应的页面    | 搜索时使用. [查看教程](/booksource/search.html)                               | 否  |
 
 ## 请求参数
 
@@ -208,6 +213,8 @@ description:
   "mediaType": "String",
   "body": "String",
   "dynamic": Boolean,
+  "script": Boolean,
+  "dynamicDelayTime": Boolean,
 }
 ```
 
@@ -220,4 +227,5 @@ description:
 | mediaType | String  | 媒体类型              | application/json; application/x-www-form-urlencoded等 | 否  |
 | body      | String  | 请求体               | 请求体数据，如表单                                            | 否  |
 | dynamic   | Boolean | 是否启用动态网页（WebView） | true则启用动态网页模式抓取源码                                    | 否  |
-
+| script   | String | 预处理脚本 | 请求完成后执行的JS，如果动态网页则在webview执行                                    | 否  |
+| dynamicDelayTime   | String | 预处理脚本执行延迟 | 防止JS异步请求未完成                                    | 否  |
