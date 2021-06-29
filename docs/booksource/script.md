@@ -5,9 +5,15 @@ description:
 
 ## 基本概念
 
-脚本的作用是对匹配后的结果进行二次处理。
+预处理脚本分为两种，
+1. 一种是在请求后对源码进行预处里
+在请求完整后执行JS脚本，如果启用了动态网页，那么可以直接使用浏览器中的对象（如window、document），如果则不可以使用浏览器中的对象，此时没有result变量。
+<img src="https://gitee.com/unclezs/image-blog/raw/master/20210629233517.png"/>
 
+2. 一种是在源码处理完成后，在规则匹配执行后进行脚本预处里
+脚本的作用是对匹配后的结果进行二次处理。
 比如有声小说，我们获取到的正文可能是网页的源码，然后通过预处理脚本对源码进行二次处理，最终找到真实音频链接。
+<img src="https://gitee.com/unclezs/image-blog/raw/master/20210629233551.png"/>
 
 ## 内置变量
 
@@ -153,6 +159,13 @@ url = https://app.unclezs.com/booksource/script.html
 ## 调试工具
 
 使用PC端书源编辑器的最下面的 **调试工具** 进行调试。
+
+- 自动请求网页保存到source，勾选后则自动请求url，然后把source补上
+- 其他字段含义同上面所述
+
+调试完成后记得复制转义后的脚本进行填写。
+
+<img src="https://gitee.com/unclezs/image-blog/raw/master/20210629234002.png"/>
 
 ## 附录
 

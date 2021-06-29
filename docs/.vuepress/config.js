@@ -1,6 +1,14 @@
 module.exports = ctx => ({
+  plugins: {
+    'sitemap': {
+      hostname: 'https://app.unclezs.com/'
+    },
+  },
   title: '📚Uncle小说',
-  description: '一个能够下载下载小说的APP',
+  description: 'Uncle小说官网 Uncle小说V5.0 一个全网小说下载器',
+  head: [
+    ['meta', { baidu: 'baidu-site-verification', content: 'code-JufzRAnClF' }]
+  ],
   themeConfig: {
     repo: 'unclezs/uncle-novel-official-site',
     repoLabel: '本站源码',
