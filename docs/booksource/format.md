@@ -153,6 +153,7 @@ description:
 | content     | [规则项](/booksource/format.html#规则项)  | 正文规则         |  是  |
 | next        | [规则项](/booksource/format.html#规则项)  | 下一页规则，匹配到下一页的URL即可，会采用标题网页区分是否属于同一章节        |  否  |
 | traditionToSimple     | Boolean  | 正文繁体转为简体         |  否  |
+| delayTime     | Long  | 下载延迟，每章节下载完后的延迟毫秒数         |  否  |
 
 ### 搜索规则
 
