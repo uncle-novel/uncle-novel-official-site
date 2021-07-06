@@ -10,7 +10,7 @@ title: 搜索规则写法
 | params     | [请求参数](/booksource/format.html#请求参数) | 请求参数                                 | 否  |
 | list       | [规则项](/booksource/format.html#规则项)   | 搜索结果列表，匹配结果应该为节点列表                   | 是  |
 | detailPage | [规则项](/booksource/format.html#规则项)   | 详情页链接规则                              | 否  |
-| detail     | [详情规则](/booksource/format.html#详情规则) | 小说详情，其规则与list的类型必须一致，基于list的匹配结果进行选择 | 是  |
+| detail     | [详情规则](/booksource/format.html#详情规则) | 小说详情 | 是  |
 
 
 搜索规则中，**必填项有 搜索链接，规则列表，标题，目录地址**，不填写完整无法进行测试。
@@ -76,7 +76,6 @@ https://xxx.com/search_{{keyword}}/{{page}}
     }
     ```
 2. 注意此处的详情规则是搜索规则中的小说信息的规则，不是[详情规则](/booksource/format.html#详情规则)。
-3. 规则类型必须**保持一致**，小说列表用了xpath，那么搜索规则中的其他规则都需要用xpath编写
 
 
 ## 例子

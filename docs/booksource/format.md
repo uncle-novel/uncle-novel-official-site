@@ -163,7 +163,7 @@ description:
 | params     | [请求参数](/booksource/format.html#请求参数) | 请求参数                                 | 否  |
 | list       | [规则项](/booksource/format.html#规则项)   | 搜索结果列表，匹配结果应该为节点列表                   | 是  |
 | detailPage | [规则项](/booksource/format.html#规则项)   | 详情页链接规则                              | 否  |
-| detail     | [详情规则](/booksource/format.html#详情规则) | 小说详情，其规则与list的类型必须一致，基于list的匹配结果进行选择 | 是  |
+| detail     | [详情规则](/booksource/format.html#详情规则) | 小说详情 | 是  |
 
 
 
