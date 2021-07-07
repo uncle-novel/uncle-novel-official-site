@@ -100,6 +100,7 @@ description:
 | cookie    | String  | 全局Cookie，用于模拟登陆 | Cookie，可以查看 [Cookie抓取教程](/guide/pc/skills.html#获取Cookie)           | 否  |
 | userAgent | String  | 全局User-Agent    | true则启用规则                 | 否  |
 | autoReferer | Boolean  | 自动添加防盗链    | true则添加                 | 否  |
+
 ### 目录规则
 
 | 名称         | 类型                                   | 含义                                   | 必填 |
@@ -114,7 +115,28 @@ description:
 | autoNext   | Boolean                              | 自动翻页，启用翻页后，是否允许自动翻页。                                 | 否  |
 | forceNext  | Boolean                              | 强制翻页，忽略网页标题限制是否为同一本书的章节的策略，强制采用规则匹配结果的下一页链接进行翻页。             | 否  |
 | sort       | Boolean                              | 乱序重排(对页内的章节进行排序)                     | 否  |
+| sortScript       | String                              | 章节排序脚本（输出结果为 正数 或负数 或 0），用于覆盖默认排序策略                   | 否  |
 | reverse       | Boolean                              | 章节逆序                     | 否  |
+
+#### 排序脚本
+
+sortScript字段在sort启用下生效，用于覆盖默认的排序策略，因为默认的排序可能不是那么通用。
+
+具体写法：
+内置两个变量 a，b。分别代表两个章节。章节包含字段：
+```js
+{
+  name: "分卷阅读1",
+  url: "https://xxx.com/read/xx",
+}
+```
+
+测试脚本举例：
+```js
+parseInt((a.name.replace("分卷阅读",""))) - parseInt((b.name.replace("分卷阅读","")));
+```
+排前面则返回负数，否则返回正数。
+
 
 ### 详情规则
 

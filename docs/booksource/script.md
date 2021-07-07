@@ -28,6 +28,8 @@ description:
 工具为utils.xx形式调用，可以方便的实现请求的发送，匹配器调用，绝对路径拼接。
 
 ```java
+// 输出日志信息（调试时使用）
+utils.log(String msg);
 // HTTP请求
 utils.get(String url);
 utils.post(String url, String body);
