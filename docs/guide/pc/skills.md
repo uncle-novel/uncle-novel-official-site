@@ -10,7 +10,7 @@ title: 一些教程
 
 <img src="https://gitee.com/unclezs/image-blog/raw/master/20210615160113.png"/>
  	
-按照由上到下顺序点击，network、all、网址、找到Cookie把冒号后面的东西复制出来直接粘贴到软件保存即可。
+按照由上到下顺序点击，network、all、网址、找到Cookie把冒号后面的东西复制出来直接粘贴到软件的【解析配置》全局配置》Cookie】保存即可。
 
 
 
