@@ -9,7 +9,7 @@ module.exports = ctx => ({
   head: [
     ['meta', { baidu: 'baidu-site-verification', content: 'code-JufzRAnClF' }]
   ],
-  base: '/uncle-novel-official-site',
+  base: '/uncle-novel-official-site/',
   themeConfig: {
     repo: 'unclezs/uncle-novel-official-site',
     repoLabel: '本站源码',
