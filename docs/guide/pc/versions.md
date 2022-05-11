@@ -9,10 +9,8 @@ title: 版本发布
 <img width="700" height="500" src="https://cdn.unclezs.com/20210615113841.png"/>
 
 **下载地址**
-- [github release](https://github.com/unclezs/NovelHarvester/releases)
-- [百度网盘 - 提取码：9999](https://pan.baidu.com/s/11a62y0v6uUzcVROKjS_-Rw) 
-- [天翼云盘 - 提取码：1bap](https://cloud.189.cn/t/fEjiimNF7773) 
 
+- [github release](https://github.com/unclezs/NovelHarvester/releases)
 
 ## V4.0
 
@@ -21,8 +19,7 @@ title: 版本发布
 <img width="700" height="500" src="https://cdn.unclezs.com/20210615111535.png"/>
 
 **下载地址**
-- [百度网盘](https://pan.baidu.com/s/10NAn5lCQv7ObQ2MkkVtAAg) 提取码: hqf5
-- [蓝奏云](https://uncle.lanzous.com/b0ibxcpe)
+
 - [github release](https://github.com/unclezs/NovelHarvester/releases)
 
 ## V3.0
@@ -33,9 +30,7 @@ title: 版本发布
 
 **下载地址**
 
-- [百度网盘](https://pan.baidu.com/s/13XTc2KKhQoMl8MiBVtJQQQ ) 提取码：9999 
 - [蓝奏云](https://uncle.lanzoui.com/i1TKTq7lwwd)
-
 
 ## V2.0
 
@@ -45,7 +40,7 @@ title: 版本发布
 
 **下载地址**
 
-- [百度网盘](https://pan.baidu.com/s/1CdYQpgFWyf_K2sc3cqVJVA) 提取码：9999 
+- [百度网盘](https://pan.baidu.com/s/1CdYQpgFWyf_K2sc3cqVJVA) 提取码：9999
 - [蓝奏云](https://uncle.lanzoui.com/iQ6Ppq7lb1g)
 
 ## V1.0
@@ -56,5 +51,4 @@ title: 版本发布
 
 **下载地址**
 
-- [百度网盘](https://pan.baidu.com/s/1dvT3SiDtiTltSkwFwVPIOA) 提取码：9999 
 - [蓝奏云](https://uncle.lanzoui.com/i0E2Rq7l2ub)
