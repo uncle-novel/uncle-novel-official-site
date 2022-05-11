@@ -1,7 +1,7 @@
 module.exports = ctx => ({
   plugins: {
     'sitemap': {
-      hostname: 'https://app.unclezs.com/'
+      hostname: 'https://github.com/uncle/uncle-novel'
     },
   },
   title: '📚Uncle小说',
@@ -11,9 +11,9 @@ module.exports = ctx => ({
   ],
   base: '/uncle-novel-official-site/',
   themeConfig: {
-    repo: 'unclezs/uncle-novel-official-site',
+    repo: 'uncle-novel/uncle-novel-official-site',
     repoLabel: '本站源码',
-    docsRepo: 'unclezs/uncle-novel-official-site',
+    docsRepo: 'uncle-novel/uncle-novel-official-site',
     docsDir: 'docs',
     docsBranch: 'main',
     editLinks: true,
