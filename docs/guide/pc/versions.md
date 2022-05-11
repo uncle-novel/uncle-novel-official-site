@@ -6,7 +6,7 @@ title: 版本发布
 
 发布时间：2021/6/21
 
-<img width="700" height="500" src="https://gitee.com/unclezs/image-blog/raw/master/20210615113841.png"/>
+<img width="700" height="500" src="https://cdn.unclezs.com/20210615113841.png"/>
 
 **下载地址**
 - [github release](https://github.com/unclezs/NovelHarvester/releases)
@@ -18,7 +18,7 @@ title: 版本发布
 
 发布时间：2020-5-27
 
-<img width="700" height="500" src="https://gitee.com/unclezs/image-blog/raw/master/20210615111535.png"/>
+<img width="700" height="500" src="https://cdn.unclezs.com/20210615111535.png"/>
 
 **下载地址**
 - [百度网盘](https://pan.baidu.com/s/10NAn5lCQv7ObQ2MkkVtAAg) 提取码: hqf5
@@ -29,7 +29,7 @@ title: 版本发布
 
 发布时间：2019-7-10
 
-<img width="700" height="500" style="border: 1px solid black;" src="https://gitee.com/unclezs/image-blog/raw/master/20210615111148.png"/>
+<img width="700" height="500" style="border: 1px solid black;" src="https://cdn.unclezs.com/20210615111148.png"/>
 
 **下载地址**
 
@@ -41,7 +41,7 @@ title: 版本发布
 
 发布时间：2018-12-9
 
-<img width="700" height="500" src="https://gitee.com/unclezs/image-blog/raw/master/20210615110520.png"/>
+<img width="700" height="500" src="https://cdn.unclezs.com/20210615110520.png"/>
 
 **下载地址**
 
@@ -52,7 +52,7 @@ title: 版本发布
 
 发布时间：2018-10
 
-<img width="700" height="500" src="https://gitee.com/unclezs/image-blog/raw/master/20210615105704.png"/>
+<img width="700" height="500" src="https://cdn.unclezs.com/20210615105704.png"/>
 
 **下载地址**
 

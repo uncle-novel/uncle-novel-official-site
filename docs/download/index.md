@@ -16,4 +16,4 @@ sidebar:  false
 
 微信扫码体验
 
-<img src="https://gitee.com/unclezs/image-blog/raw/master///gh_b0ff5cf2030f_258.jpg"/>
+<img src="https://cdn.unclezs.com///gh_b0ff5cf2030f_258.jpg"/>

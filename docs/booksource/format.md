@@ -82,11 +82,10 @@ description:
 
 ### 基本信息
 
-
 | 名称      | 类型      | 含义                 | 可选值                    | 必填 |
 |---------|---------|--------------------|------------------------|----|
 | name    | String  | 书源名称，一般为网站名称       | 网站名称，如笔趣阁              | 是  |
-| site    | String  | 书源的网址，书源的唯一标识符，不可重复, 以/结尾              | 网址，如https://novel.com/ | 是  |
+| site    | String  | 书源的网址，书源的唯一标识符，不可重复, 以/结尾              | 网址，如<https://novel.com/> | 是  |
 | group   | String  | 书源分组               | 分组，如默认                 | 否  |
 | enabled | Boolean | 是否启用书源，不启用则不会被用于搜索             | true则启用规则              | 是  |
 | audio   | Boolean | 是否为有声小说书源          | true则为有声小说书源           | 否  |
@@ -124,6 +123,7 @@ sortScript字段在sort启用下生效，用于覆盖默认的排序策略，因
 
 具体写法：
 内置两个变量 a，b。分别代表两个章节。章节包含字段：
+
 ```js
 {
   name: "分卷阅读1",
@@ -132,11 +132,12 @@ sortScript字段在sort启用下生效，用于覆盖默认的排序策略，因
 ```
 
 测试脚本举例：
+
 ```js
 parseInt((a.name.replace("分卷阅读",""))) - parseInt((b.name.replace("分卷阅读","")));
 ```
-排前面则返回负数，否则返回正数。
 
+排前面则返回负数，否则返回正数。
 
 ### 详情规则
 
@@ -166,7 +167,6 @@ parseInt((a.name.replace("分卷阅读",""))) - parseInt((b.name.replace("分卷
 - auto:2，段落模式
 - auto:3，全文模式
 
-
 | 名称          | 类型      | 含义           | 必填 |
 |-------------|---------|--------------|----|
 | params      | [请求参数](/booksource/format.html#请求参数)   | 请求参数         | 否  |
@@ -187,9 +187,7 @@ parseInt((a.name.replace("分卷阅读",""))) - parseInt((b.name.replace("分卷
 | detailPage | [规则项](/booksource/format.html#规则项)   | 详情页链接规则                              | 否  |
 | detail     | [详情规则](/booksource/format.html#详情规则) | 小说详情 | 是  |
 
-
-
-## 规则项 
+## 规则项
 
 规则项为一个普通规则的格式
 
@@ -243,7 +241,7 @@ parseInt((a.name.replace("分卷阅读",""))) - parseInt((b.name.replace("分卷
 
 | 名称      | 类型    | 含义              | 可选值                                                  | 必填 |
 |-----------|---------|-------------------|------------------------------------------------------|----|
-| url       | String  | 请求的URL            | 网址，如http://www.novel.com                             | 否  |
+| url       | String  | 请求的URL            | 网址，如<http://www.novel.com>                             | 否  |
 | method    | String  | 请求方法              | GET、POST、PUT等HTTP请求方法                                | 否  |
 | charset   | String  | 网页编码格式            | UTF-8、GBK等编码格式                                       | 否  |
 | headers   | Object  | 请求头               | 指定Referer、User-Agent等请求头                             | 否  |

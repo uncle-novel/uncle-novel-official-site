@@ -6,14 +6,15 @@ description:
 ## 基本概念
 
 预处理脚本分为两种，
+
 1. 一种是在请求后对源码进行预处里
 在请求完整后执行JS脚本，如果启用了动态网页，那么可以直接使用浏览器中的对象（如window、document），如果则不可以使用浏览器中的对象，此时没有result变量。
-<img src="https://gitee.com/unclezs/image-blog/raw/master/20210629233517.png"/>
+<img src="https://cdn.unclezs.com/20210629233517.png"/>
 
 2. 一种是在源码处理完成后，在规则匹配执行后进行脚本预处里
 脚本的作用是对匹配后的结果进行二次处理。
 比如有声小说，我们获取到的正文可能是网页的源码，然后通过预处理脚本对源码进行二次处理，最终找到真实音频链接。
-<img src="https://gitee.com/unclezs/image-blog/raw/master/20210629233551.png"/>
+<img src="https://cdn.unclezs.com/20210629233551.png"/>
 
 ## 内置变量
 
@@ -21,7 +22,6 @@ description:
 - source 当前网页的源码，如在目录规则里面即为当前小说的目录地址的网页源码
 - result 规则匹配后的结果，如小说标题规则中，这里取到的就是小说匹配后的标题
 - params 当前的请求参数，在js的读取值时需要采用java方法调用的方式。如获取Cookie可以采用`params.getHeader("Cookie")`。具体见附录[params字段对应的java类](/booksource/script.html#params字段对应的java类)
-
 
 ## 内置工具
 
@@ -73,6 +73,7 @@ var reqParams = {
 var html = utils.request(utils.toJson(reqParams));
 result = html
 ```
+
 JSON.stringify只可用户纯js对象，不能用于js与java混合的，如上的reqParams就只能使用内置工具的toJson而不能使用JSON.stringify。
 
 ## 具体写法
@@ -80,6 +81,7 @@ JSON.stringify只可用户纯js对象，不能用于js与java混合的，如上�
 将处理后的结果赋值给result变量，写好后可以用[JS压缩工具](https://tool.oschina.net/jscompress/)进行压缩
 
 1.简单例子
+
 ```js
 var html = utils.get(url);
 result = html;
@@ -89,12 +91,12 @@ result = html;
 
 ```js
 function getHtmlParas(str) {
-	var sid = str.split("-");
-	var n = sid.length;
-	var vid = sid[n - 1].split(".")[0];
-	var pid = 0;
-	vid = vid - 1;
-	return [pid, vid]
+ var sid = str.split("-");
+ var n = sid.length;
+ var vid = sid[n - 1].split(".")[0];
+ var pid = 0;
+ vid = vid - 1;
+ return [pid, vid]
 }
 var params = getHtmlParas(url);
 var jsUrl = utils.absUrl(url, result);
@@ -110,8 +112,9 @@ result = VideoListJson[params[0]][1][params[1]].split("$")[1];
 
 目标：获取章节链接时，把章节链接从相对链接变为绝对链接。
 如： `/booksource/script.html -> https://app.unclezs.com/booksource/script.html`
-假设当前目录地址为： https://app.unclezs.com/booksource/
+假设当前目录地址为： <https://app.unclezs.com/booksource/>
 目录规则为：
+
 ```json
 "toc": {
   "list": "//*[@id="app"]/div[1]/aside/ul/li/section/ul/li",
@@ -121,27 +124,35 @@ result = VideoListJson[params[0]][1][params[1]].split("$")[1];
 ```
 
 取匹配后《预处理脚本》章节进行举例，匹配结果为
+
 ```js
 name = 预处理脚本
 url = /booksource/script.html
 ```
+
 如果url的规则包含js脚本，那么脚本中的初始变量为
+
 ```js
 result = /booksource/script.html
 source = 网址https://app.unclezs.com/booksource/的HTML源码
 url = https://app.unclezs.com/booksource/
 ```
+
 此时我们通过脚本将匹配结果`/booksource/script.html`转化为绝对链接。脚本如下：
+
 ```js
 result = utils.absUrl(url,result);
 ```
+
 在章节链接规则中加入上述脚本后的匹配结果为：
+
 ```js
 name = 预处理脚本
 url = https://app.unclezs.com/booksource/script.html
 ```
 
 完整的规则如下：
+
 ```json
 "toc": {
   "list": "//*[@id="app"]/div[1]/aside/ul/li/section/ul/li",
@@ -167,7 +178,7 @@ url = https://app.unclezs.com/booksource/script.html
 
 调试完成后记得复制转义后的脚本进行填写。
 
-<img src="https://gitee.com/unclezs/image-blog/raw/master/20210629234002.png"/>
+<img src="https://cdn.unclezs.com/20210629234002.png"/>
 
 ## 附录
 

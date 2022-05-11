@@ -19,4 +19,4 @@ title: 替换净化规则
 
 如果是单纯的只想替换掉某个字符串，直接复制对应的字符串即可，替换为的文字留空即可。
 
-<img src="https://gitee.com/unclezs/image-blog/raw/master/20210626161921.png"/>
+<img src="https://cdn.unclezs.com/20210626161921.png"/>

@@ -2,7 +2,7 @@
 sidebar:  false
 ---
 
-<img src="https://gitee.com/unclezs/image-blog/raw/master///gh_b0ff5cf2030f_258.jpg"/>
+<img src="https://cdn.unclezs.com///gh_b0ff5cf2030f_258.jpg"/>
 
 Uncle小说微信小程序版，主要提供目录解析、正文解析、预处理及下载功能，解决IOS端或移动端无法使用的问题。
 

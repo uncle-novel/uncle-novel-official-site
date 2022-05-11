@@ -8,7 +8,7 @@ title: 一些教程
 抓取教程:
 在小说网站登陆账号，打开需要vip才能读的那章小说，然后按F12,再按F5出现下图
 
-<img src="https://gitee.com/unclezs/image-blog/raw/master/20210615160113.png"/>
+<img src="https://cdn.unclezs.com/20210615160113.png"/>
  	
 按照由上到下顺序点击，network、all、网址、找到Cookie把冒号后面的东西复制出来直接粘贴到软件的【解析配置》全局配置》Cookie】保存即可。
 

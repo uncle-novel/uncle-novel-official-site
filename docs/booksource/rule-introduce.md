@@ -13,6 +13,7 @@ Xpath基于[JsoupXpath](https://github.com/zhegexiaohuozi/JsoupXpath)，一个�
 ### 注意事项
 
 使用JsoupXpath时如果发现自己写的在XPath Helper中能够正确取值，但是在规则中无法取到
+
 - 查看是否为xpath1.0语法
 - 在[JsoupXpath Issues](https://github.com/zhegexiaohuozi/JsoupXpath/issues)中查看是否已解决
 
@@ -82,12 +83,14 @@ REGEXP_NOT_WITH:  '!~';  //a的内容不符合 正则表达式b   （JsoupXpath�
 ```
 
 1. 选择对应标签的文本
+
 ```
 .content p@text  得到 “我是一段文字内容”
 .content p@ownText 得到 “我是一段文字”
 ```
 
 2. 选择任意的属性值
+
 ```xml
 <!-- 规则 -->
 .content p@_attr 得到 “我是一个属性”
@@ -137,4 +140,3 @@ $.store.book[0].author
 // 结果
 Nigel Rees
 ```
-

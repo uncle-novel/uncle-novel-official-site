@@ -15,6 +15,6 @@ Uncle小说安卓版是一款能够对全网小说进行解析与下载的工具
 
 **应用预览**
 
-<img src="https://gitee.com/unclezs/image-blog/raw/master/20210528181802.png"/>
+<img src="https://cdn.unclezs.com/20210528181802.png"/>
 
-<img src="https://gitee.com/unclezs/image-blog/raw/master/20210528181937.png"/>
+<img src="https://cdn.unclezs.com/20210528181937.png"/>
