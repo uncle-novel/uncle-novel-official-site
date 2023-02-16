@@ -6,7 +6,7 @@ title: 替换净化规则
 
 替换净化规则是在规则匹配完成后，对结果通过正则进行替换，每个规则项都可以编写替换规则。
 
-格式见：[规则项-替换净化](/booksource/format.html#规则项)
+格式见：[规则项-替换净化](/uncle-novel-official-site/booksource/format.html#规则项)
 
 ### 用途
 

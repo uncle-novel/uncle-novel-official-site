@@ -21,7 +21,7 @@ description:
 - url 当前网页的URL，如在目录规则里面即为当前小说的目录地址
 - source 当前网页的源码，如在目录规则里面即为当前小说的目录地址的网页源码
 - result 规则匹配后的结果，如小说标题规则中，这里取到的就是小说匹配后的标题
-- params 当前的请求参数，在js的读取值时需要采用java方法调用的方式。如获取Cookie可以采用`params.getHeader("Cookie")`。具体见附录[params字段对应的java类](/booksource/script.html#params字段对应的java类)
+- params 当前的请求参数，在js的读取值时需要采用java方法调用的方式。如获取Cookie可以采用`params.getHeader("Cookie")`。具体见附录[params字段对应的java类](/uncle-novel-official-site/booksource/script.html#params字段对应的java类)
 
 ## 内置工具
 
@@ -58,7 +58,7 @@ utils.matchList(String src, String withTypeRule);
 utils.absUrl(String baseUrl, String relativePath);
 ```
 
-`utils.request(String paramsJson);`中的paramsJson格式为 [请求参数](/booksource/format.html#请求参数)，举例：
+`utils.request(String paramsJson);`中的paramsJson格式为 [请求参数](/uncle-novel-official-site/booksource/format.html#请求参数)，举例：
 
 ```js
 var reqParams = {
@@ -167,7 +167,7 @@ url = https://app.unclezs.com/booksource/script.html
 ## 注意
 
 - 处理完成后需要将脚本进行JSON转义再放入规则，可以使用在线转义：[JSON转义](https://www.sojson.com/yasuo.html)，或者在调试工具中复制转义后的脚本。
-- JSON.stringify只能用于纯Js对象，不可用于Java对象与Js对象混合的，实例可见[内置工具](/booksource/script.html#内置工具)
+- JSON.stringify只能用于纯Js对象，不可用于Java对象与Js对象混合的，实例可见[内置工具](/uncle-novel-official-site/booksource/script.html#内置工具)
 
 ## 调试工具
 

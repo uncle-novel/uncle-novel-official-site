@@ -8,4 +8,4 @@ title: 书源调试
 
 ## 注意
 
-- 在脚本调试时，params字段只可以填写[params字段对应的java类](/booksource/script.html#params字段对应的java类)中的字段。
+- 在脚本调试时，params字段只可以填写[params字段对应的java类](/uncle-novel-official-site/booksource/script.html#params字段对应的java类)中的字段。

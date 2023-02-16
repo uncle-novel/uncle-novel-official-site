@@ -7,10 +7,10 @@ title: 搜索规则写法
 | 名称         | 类型                                   | 含义                                   | 必填 |
 |------------|--------------------------------------|--------------------------------------|----|
 | url        | String | 搜索链接                                 | 是  |
-| params     | [请求参数](/booksource/format.html#请求参数) | 请求参数                                 | 否  |
-| list       | [规则项](/booksource/format.html#规则项)   | 搜索结果列表，匹配结果应该为节点列表                   | 是  |
-| detailPage | [规则项](/booksource/format.html#规则项)   | 详情页链接规则                              | 否  |
-| detail     | [详情规则](/booksource/format.html#详情规则) | 小说详情 | 是  |
+| params     | [请求参数](/uncle-novel-official-site/booksource/format.html#请求参数) | 请求参数                                 | 否  |
+| list       | [规则项](/uncle-novel-official-site/booksource/format.html#规则项)   | 搜索结果列表，匹配结果应该为节点列表                   | 是  |
+| detailPage | [规则项](/uncle-novel-official-site/booksource/format.html#规则项)   | 详情页链接规则                              | 否  |
+| detail     | [详情规则](/uncle-novel-official-site/booksource/format.html#详情规则) | 小说详情 | 是  |
 
 搜索规则中，**必填项有 搜索链接，规则列表，标题，目录地址**，不填写完整无法进行测试。
 
@@ -43,7 +43,7 @@ https://xxx.com/search_{{keyword}}/{{page}}
 
 - 搜索参数中的`{{xxx}}`可以为**脚本**，比如可以填写 `{{page*100}}`，则会自动识别为脚本，并且会将页码乘以100再进行请求。
 :::
-- **搜索关键词编码**：如果填写了[请求参数](/booksource/format.html#请求参数)中的编码字段，那么就会采用对应编码对搜索关键词进行unicode编码。
+- **搜索关键词编码**：如果填写了[请求参数](/uncle-novel-official-site/booksource/format.html#请求参数)中的编码字段，那么就会采用对应编码对搜索关键词进行unicode编码。
 
 ## 搜索结果详情页写法
 
@@ -81,7 +81,7 @@ https://xxx.com/search_{{keyword}}/{{page}}
     }
     ```
 
-2. 注意此处的详情规则是搜索规则中的小说信息的规则，不是[详情规则](/booksource/format.html#详情规则)。
+2. 注意此处的详情规则是搜索规则中的小说信息的规则，不是[详情规则](/uncle-novel-official-site/booksource/format.html#详情规则)。
 
 ## 例子
 
