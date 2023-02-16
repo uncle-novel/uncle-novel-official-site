@@ -1,5 +1,5 @@
 
-- 开源地址：[https://github.com/unclezs/NovelHarvester](https://github.com/unclezs/NovelHarvester)
+- 开源地址：[https://github.com/uncle-novel](https://github.com/uncle-novel)
 
 开源不易，如果觉得不错 希望可以点个Star!
 
