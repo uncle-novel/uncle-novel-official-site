@@ -18,6 +18,6 @@ cd -
 # 源码上传到main
 
 git add -A . 
-git commit -m "${1:-'update'}"
+git commit -m "${1:-update}"
 git push -u origin main
 
