@@ -10,7 +10,7 @@ echo "uncle novel official pages" > README.md
 git add -A .
 git config user.name "unclezs"
 git config user.email "unclezs@qq.com"
-git commit -a -m "${1:-'update'}" --branch
+git commit -a -m "${1:-update}" --branch
 git remote add origin git@github.com:unclezs/uncle-novel-official-site.git
 git branch page
 git push -f -u origin page
