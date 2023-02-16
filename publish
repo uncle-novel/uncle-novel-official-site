@@ -6,6 +6,7 @@ set -e
 yarn run build
 cd docs/.vuepress/dist
 git init
+echo "uncle novel official pages" > README.md
 git add -A .
 git config user.name "unclezs"
 git config user.email "unclezs@qq.com"
