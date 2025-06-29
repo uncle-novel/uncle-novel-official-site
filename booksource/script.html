@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>预处理脚本 | 📚Uncle小说</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Uncle小说官网 Uncle小说V5.0 一个全网小说下载器">
+    <meta baidu="baidu-site-verification" content="code-JufzRAnClF">
+    
+    <link rel="preload" href="/uncle-novel-official-site/assets/css/0.styles.fa820ce7.css" as="style"><link rel="preload" href="/uncle-novel-official-site/assets/js/app.36db7c0a.js" as="script"><link rel="preload" href="/uncle-novel-official-site/assets/js/2.705b7372.js" as="script"><link rel="preload" href="/uncle-novel-official-site/assets/js/1.527d975e.js" as="script"><link rel="preload" href="/uncle-novel-official-site/assets/js/30.1409f379.js" as="script"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/10.0fd22071.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/11.190fb976.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/12.1883afcc.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/13.1031ca59.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/14.eb9b67e2.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/15.0642a86a.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/16.3cae1767.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/17.ff8e6935.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/18.43522b18.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/19.9f15937c.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/20.f332d0cd.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/21.5a9dd28b.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/22.5739ac9d.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/23.91a3b3c7.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/24.9606909c.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/25.aa9919df.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/26.2bb34d0d.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/27.423be31e.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/28.f7670ad1.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/29.5c8746bb.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/3.20f71f30.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/31.5ef9ea15.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/32.aa49ea3a.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/33.76003273.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/34.504e7b95.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/35.401858ed.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/36.76cfbe9f.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/37.8ae787a9.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/38.1263da90.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/39.d88b4680.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/4.130f67aa.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/40.62dad8e8.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/41.c9f20a94.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/42.630afdf0.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/43.05d1f30f.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/44.bc79b383.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/45.66388b5d.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/5.6807d7c5.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/6.37166e42.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/7.e2fbbf8a.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/vendors~docsearch.94b65286.js">
+    <link rel="stylesheet" href="/uncle-novel-official-site/assets/css/0.styles.fa820ce7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/uncle-novel-official-site/" class="home-link router-link-active"><!----> <span class="site-name">📚Uncle小说</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/uncle-novel-official-site/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/download/" class="nav-link">
+  下载软件
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/sponsors/" class="nav-link">
+  赞助开发
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="使用指南" class="dropdown-title"><span class="title">使用指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="使用指南" class="mobile-dropdown-title"><span class="title">使用指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/pc/" class="nav-link">
+  电脑版
+</a></li><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/android/" class="nav-link">
+  安卓版
+</a></li></ul></div></div><div class="nav-item"><a href="/uncle-novel-official-site/booksource/" class="nav-link router-link-active">
+  书源教程
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/qa/" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/uncle-novel/uncle-novel-official-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    本站源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/uncle-novel-official-site/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/download/" class="nav-link">
+  下载软件
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/sponsors/" class="nav-link">
+  赞助开发
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="使用指南" class="dropdown-title"><span class="title">使用指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="使用指南" class="mobile-dropdown-title"><span class="title">使用指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/pc/" class="nav-link">
+  电脑版
+</a></li><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/android/" class="nav-link">
+  安卓版
+</a></li></ul></div></div><div class="nav-item"><a href="/uncle-novel-official-site/booksource/" class="nav-link router-link-active">
+  书源教程
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/qa/" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/uncle-novel/uncle-novel-official-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    本站源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>书源教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/uncle-novel-official-site/booksource/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/uncle-novel-official-site/booksource/format.html" class="sidebar-link">书源格式</a></li><li><a href="/uncle-novel-official-site/booksource/rule-introduce.html" class="sidebar-link">四种规则写法</a></li><li><a href="/uncle-novel-official-site/booksource/search.html" class="sidebar-link">搜索规则写法</a></li><li><a href="/uncle-novel-official-site/booksource/script.html" aria-current="page" class="active sidebar-link">预处理脚本</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#基本概念" class="sidebar-link">基本概念</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#内置变量" class="sidebar-link">内置变量</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#内置工具" class="sidebar-link">内置工具</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#具体写法" class="sidebar-link">具体写法</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#注意" class="sidebar-link">注意</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#调试工具" class="sidebar-link">调试工具</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#附录" class="sidebar-link">附录</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/script.html#params字段对应的java类" class="sidebar-link">Params字段对应的Java类</a></li></ul></li></ul></li><li><a href="/uncle-novel-official-site/booksource/replace.html" class="sidebar-link">替换净化规则</a></li><li><a href="/uncle-novel-official-site/booksource/advanced.html" class="sidebar-link">进阶写法</a></li><li><a href="/uncle-novel-official-site/booksource/skills.html" class="sidebar-link">常用功能教程</a></li><li><a href="/uncle-novel-official-site/booksource/debug.html" class="sidebar-link">书源调试</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="基本概念"><a href="#基本概念" class="header-anchor">#</a> 基本概念</h2> <p>预处理脚本分为两种，</p> <ol><li><p>一种是在请求后对源码进行预处里
+在请求完整后执行JS脚本，如果启用了动态网页，那么可以直接使用浏览器中的对象（如window、document），如果则不可以使用浏览器中的对象，此时没有result变量。
+<img src="https://cdn.unclezs.com/20210629233517.png"></p></li> <li><p>一种是在源码处理完成后，在规则匹配执行后进行脚本预处里
+脚本的作用是对匹配后的结果进行二次处理。
+比如有声小说，我们获取到的正文可能是网页的源码，然后通过预处理脚本对源码进行二次处理，最终找到真实音频链接。
+<img src="https://cdn.unclezs.com/20210629233551.png"></p></li></ol> <h2 id="内置变量"><a href="#内置变量" class="header-anchor">#</a> 内置变量</h2> <ul><li>url 当前网页的URL，如在目录规则里面即为当前小说的目录地址</li> <li>source 当前网页的源码，如在目录规则里面即为当前小说的目录地址的网页源码</li> <li>result 规则匹配后的结果，如小说标题规则中，这里取到的就是小说匹配后的标题</li> <li>params 当前的请求参数，在js的读取值时需要采用java方法调用的方式。如获取Cookie可以采用<code>params.getHeader(&quot;Cookie&quot;)</code>。具体见附录<a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/script.html#params字段对应的java类">params字段对应的java类</a></li></ul> <h2 id="内置工具"><a href="#内置工具" class="header-anchor">#</a> 内置工具</h2> <p>工具为utils.xx形式调用，可以方便的实现请求的发送，匹配器调用，绝对路径拼接。</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">// 输出日志信息（调试时使用）</span>
+utils<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// HTTP请求</span>
+utils<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">String</span> url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+utils<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token class-name">String</span> url<span class="token punctuation">,</span> <span class="token class-name">String</span> body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+utils<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token class-name">String</span> paramsJson<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 字符串转换为JSON</span>
+utils<span class="token punctuation">.</span><span class="token function">toJson</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+  * 匹配单个结果，同规则项一致
+  * eg: xpath://xxx
+  *
+  * @param src          匹配目标内容
+  * @param withTypeRule 带类型的规则 type:rule
+  * @return 匹配结果
+*/</span>
+utils<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token class-name">String</span> src<span class="token punctuation">,</span> <span class="token class-name">String</span> withTypeRule<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+  * 匹配单个结果，同规则项一致
+  * eg: xpath://xxx
+  *
+  * @param src          匹配目标内容
+  * @param withTypeRule 带类型的规则 type:rule
+  * @return 匹配结果列表（可能是节点列表）
+*/</span>
+utils<span class="token punctuation">.</span><span class="token function">matchList</span><span class="token punctuation">(</span><span class="token class-name">String</span> src<span class="token punctuation">,</span> <span class="token class-name">String</span> withTypeRule<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 拼接相对URL为完整的的URL</span>
+utils<span class="token punctuation">.</span><span class="token function">absUrl</span><span class="token punctuation">(</span><span class="token class-name">String</span> baseUrl<span class="token punctuation">,</span> <span class="token class-name">String</span> relativePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>utils.request(String paramsJson);</code>中的paramsJson格式为 <a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/format.html#请求参数">请求参数</a>，举例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> reqParams <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">url</span><span class="token operator">:</span> url<span class="token punctuation">,</span>
+    <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;Referer&quot;</span><span class="token operator">:</span> url<span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;Cookie&quot;</span><span class="token operator">:</span> params<span class="token punctuation">.</span><span class="token function">getHeader</span><span class="token punctuation">(</span><span class="token string">&quot;Cookie&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">&quot;GET&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 此处不能使用JSON.stringify，否则Andorid端不兼容</span>
+<span class="token keyword">var</span> html <span class="token operator">=</span> utils<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>utils<span class="token punctuation">.</span><span class="token function">toJson</span><span class="token punctuation">(</span>reqParams<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+result <span class="token operator">=</span> html
+</code></pre></div><p>JSON.stringify只可用户纯js对象，不能用于js与java混合的，如上的reqParams就只能使用内置工具的toJson而不能使用JSON.stringify。</p> <h2 id="具体写法"><a href="#具体写法" class="header-anchor">#</a> 具体写法</h2> <p>将处理后的结果赋值给result变量，写好后可以用<a href="https://tool.oschina.net/jscompress/" target="_blank" rel="noopener noreferrer">JS压缩工具<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>进行压缩</p> <p>1.简单例子</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> html <span class="token operator">=</span> utils<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+result <span class="token operator">=</span> html<span class="token punctuation">;</span>
+</code></pre></div><p>2.获取某有声小说网站音频地址实例</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">getHtmlParas</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token keyword">var</span> sid <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;-&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">var</span> n <span class="token operator">=</span> sid<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+ <span class="token keyword">var</span> vid <span class="token operator">=</span> sid<span class="token punctuation">[</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ <span class="token keyword">var</span> pid <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+ vid <span class="token operator">=</span> vid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+ <span class="token keyword">return</span> <span class="token punctuation">[</span>pid<span class="token punctuation">,</span> vid<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> params <span class="token operator">=</span> <span class="token function">getHtmlParas</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> jsUrl <span class="token operator">=</span> utils<span class="token punctuation">.</span><span class="token function">absUrl</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> dataJs <span class="token operator">=</span> utils<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>jsUrl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+dataJs <span class="token operator">=</span> dataJs<span class="token punctuation">.</span><span class="token function">replaceAll</span><span class="token punctuation">(</span><span class="token string">&quot;,urlinfo.+?;&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;;result = VideoListJson;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> VideoListJson <span class="token operator">=</span> <span class="token function">eval</span><span class="token punctuation">(</span>dataJs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+result <span class="token operator">=</span> VideoListJson<span class="token punctuation">[</span>params<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>params<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;$&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>3.具体例子</p> <p><strong>实例</strong></p> <p>目标：获取章节链接时，把章节链接从相对链接变为绝对链接。
+如： <code>/booksource/script.html -&gt; https://app.unclezs.com/booksource/script.html</code>
+假设当前目录地址为： <a href="https://app.unclezs.com/booksource/" target="_blank" rel="noopener noreferrer">https://app.unclezs.com/booksource/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+目录规则为：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;toc&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//*[@id=&quot;</span>app<span class="token string">&quot;]/div[1]/aside/ul/li/section/ul/li&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text()&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@href&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>取匹配后《预处理脚本》章节进行举例，匹配结果为</p> <div class="language-js extra-class"><pre class="language-js"><code>name <span class="token operator">=</span> 预处理脚本
+url <span class="token operator">=</span> <span class="token operator">/</span>booksource<span class="token operator">/</span>script<span class="token punctuation">.</span>html
+</code></pre></div><p>如果url的规则包含js脚本，那么脚本中的初始变量为</p> <div class="language-js extra-class"><pre class="language-js"><code>result <span class="token operator">=</span> <span class="token operator">/</span>booksource<span class="token operator">/</span>script<span class="token punctuation">.</span>html
+source <span class="token operator">=</span> 网址https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>app<span class="token punctuation">.</span>unclezs<span class="token punctuation">.</span>com<span class="token operator">/</span>booksource<span class="token operator">/</span>的<span class="token constant">HTML</span>源码
+url <span class="token operator">=</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>app<span class="token punctuation">.</span>unclezs<span class="token punctuation">.</span>com<span class="token operator">/</span>booksource<span class="token operator">/</span>
+</code></pre></div><p>此时我们通过脚本将匹配结果<code>/booksource/script.html</code>转化为绝对链接。脚本如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>result <span class="token operator">=</span> utils<span class="token punctuation">.</span><span class="token function">absUrl</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在章节链接规则中加入上述脚本后的匹配结果为：</p> <div class="language-js extra-class"><pre class="language-js"><code>name <span class="token operator">=</span> 预处理脚本
+url <span class="token operator">=</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>app<span class="token punctuation">.</span>unclezs<span class="token punctuation">.</span>com<span class="token operator">/</span>booksource<span class="token operator">/</span>script<span class="token punctuation">.</span>html
+</code></pre></div><p>完整的规则如下：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;toc&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//*[@id=&quot;</span>app<span class="token string">&quot;]/div[1]/aside/ul/li/section/ul/li&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text()&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span><span class="token string">&quot;@href&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;script&quot;</span><span class="token operator">:</span> <span class="token string">&quot;result = utils.absUrl(url,result);&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h2 id="注意"><a href="#注意" class="header-anchor">#</a> 注意</h2> <ul><li>处理完成后需要将脚本进行JSON转义再放入规则，可以使用在线转义：<a href="https://www.sojson.com/yasuo.html" target="_blank" rel="noopener noreferrer">JSON转义<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，或者在调试工具中复制转义后的脚本。</li> <li>JSON.stringify只能用于纯Js对象，不可用于Java对象与Js对象混合的，实例可见<a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/script.html#内置工具">内置工具</a></li></ul> <h2 id="调试工具"><a href="#调试工具" class="header-anchor">#</a> 调试工具</h2> <p>使用PC端书源编辑器的最下面的 <strong>调试工具</strong> 进行调试。</p> <ul><li>自动请求网页保存到source，勾选后则自动请求url，然后把source补上</li> <li>其他字段含义同上面所述</li></ul> <p>调试完成后记得复制转义后的脚本进行填写。</p> <img src="https://cdn.unclezs.com/20210629234002.png"> <h2 id="附录"><a href="#附录" class="header-anchor">#</a> 附录</h2> <h3 id="params字段对应的java类"><a href="#params字段对应的java类" class="header-anchor">#</a> Params字段对应的Java类</h3> <p>可以对照着调用方法进行调用，其中属性的通用方法为调用方式为</p> <ul><li><code>param.xxx</code></li></ul> <p>可以在js中这么调用</p> <div class="language-js extra-class"><pre class="language-js"><code>params<span class="token punctuation">.</span>method<span class="token punctuation">;</span>
+params<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>Cookie<span class="token punctuation">;</span>
+params<span class="token punctuation">.</span><span class="token function">getHeader</span><span class="token punctuation">(</span><span class="token string">&quot;Cookie&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+params<span class="token punctuation">.</span><span class="token function">addHeader</span><span class="token punctuation">(</span><span class="token string">&quot;Referer&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;https://app.unclezs.com&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RequestParams</span> <span class="token keyword">implements</span> <span class="token class-name">Verifiable</span><span class="token punctuation">,</span> <span class="token class-name">Serializable</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * 请求链接
+   */</span>
+  <span class="token keyword">private</span> <span class="token class-name">String</span> url<span class="token punctuation">;</span>
+  <span class="token comment">/**
+   * 请求方法
+   */</span>
+  <span class="token keyword">private</span> <span class="token class-name">String</span> method<span class="token punctuation">;</span>
+  <span class="token comment">/**
+   * 网页编码
+   */</span>
+  <span class="token keyword">private</span> <span class="token class-name">String</span> charset<span class="token punctuation">;</span>
+  <span class="token comment">/**
+   * 请求头
+   */</span>
+  <span class="token keyword">private</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> headers<span class="token punctuation">;</span>
+  <span class="token comment">/**
+   * 请求方式
+   */</span>
+  <span class="token keyword">private</span> <span class="token class-name">String</span> mediaType<span class="token punctuation">;</span>
+  <span class="token comment">/**
+   * 请求体
+   */</span>
+  <span class="token keyword">private</span> <span class="token class-name">String</span> body<span class="token punctuation">;</span>
+  <span class="token comment">/**
+   * 是否为动态网页
+   */</span>
+  <span class="token keyword">private</span> <span class="token class-name">Boolean</span> dynamic<span class="token punctuation">;</span>
+
+  <span class="token comment">/**
+   * 获取请求头
+   *
+   * @param headerName  名称
+   * @param defaultName 默认值
+   * @return 请求头
+   */</span>
+  <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getHeader</span><span class="token punctuation">(</span><span class="token class-name">String</span> headerName<span class="token punctuation">,</span> <span class="token class-name">String</span> defaultName<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 获取请求头
+   *
+   * @param headerName 名称
+   * @return 请求头
+   */</span>
+  <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getHeader</span><span class="token punctuation">(</span><span class="token class-name">String</span> headerName<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 设置请求头 存在则覆盖
+   *
+   * @param headerName  名称
+   * @param headerValue 值
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token class-name">String</span> headerName<span class="token punctuation">,</span> <span class="token class-name">String</span> headerValue<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 设置请求头 如果不存在则设置 存在则忽略
+   *
+   * @param headerName  名称
+   * @param headerValue 值
+   */</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">addHeader</span><span class="token punctuation">(</span><span class="token class-name">String</span> headerName<span class="token punctuation">,</span> <span class="token class-name">String</span> headerValue<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/uncle-novel/uncle-novel-official-site/edit/main/docs/booksource/script.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2/16/2023, 11:46:59 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/uncle-novel-official-site/booksource/search.html" class="prev">
+        搜索规则写法
+      </a></span> <span class="next"><a href="/uncle-novel-official-site/booksource/replace.html">
+        替换净化规则
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/uncle-novel-official-site/assets/js/app.36db7c0a.js" defer></script><script src="/uncle-novel-official-site/assets/js/2.705b7372.js" defer></script><script src="/uncle-novel-official-site/assets/js/1.527d975e.js" defer></script><script src="/uncle-novel-official-site/assets/js/30.1409f379.js" defer></script>
+  </body>
+</html>

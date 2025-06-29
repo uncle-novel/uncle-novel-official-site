@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搜索规则写法 | 📚Uncle小说</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Uncle小说官网 Uncle小说V5.0 一个全网小说下载器">
+    <meta baidu="baidu-site-verification" content="code-JufzRAnClF">
+    
+    <link rel="preload" href="/uncle-novel-official-site/assets/css/0.styles.fa820ce7.css" as="style"><link rel="preload" href="/uncle-novel-official-site/assets/js/app.36db7c0a.js" as="script"><link rel="preload" href="/uncle-novel-official-site/assets/js/2.705b7372.js" as="script"><link rel="preload" href="/uncle-novel-official-site/assets/js/1.527d975e.js" as="script"><link rel="preload" href="/uncle-novel-official-site/assets/js/31.5ef9ea15.js" as="script"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/10.0fd22071.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/11.190fb976.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/12.1883afcc.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/13.1031ca59.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/14.eb9b67e2.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/15.0642a86a.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/16.3cae1767.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/17.ff8e6935.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/18.43522b18.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/19.9f15937c.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/20.f332d0cd.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/21.5a9dd28b.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/22.5739ac9d.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/23.91a3b3c7.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/24.9606909c.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/25.aa9919df.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/26.2bb34d0d.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/27.423be31e.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/28.f7670ad1.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/29.5c8746bb.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/3.20f71f30.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/30.1409f379.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/32.aa49ea3a.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/33.76003273.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/34.504e7b95.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/35.401858ed.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/36.76cfbe9f.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/37.8ae787a9.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/38.1263da90.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/39.d88b4680.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/4.130f67aa.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/40.62dad8e8.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/41.c9f20a94.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/42.630afdf0.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/43.05d1f30f.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/44.bc79b383.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/45.66388b5d.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/5.6807d7c5.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/6.37166e42.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/7.e2fbbf8a.js"><link rel="prefetch" href="/uncle-novel-official-site/assets/js/vendors~docsearch.94b65286.js">
+    <link rel="stylesheet" href="/uncle-novel-official-site/assets/css/0.styles.fa820ce7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/uncle-novel-official-site/" class="home-link router-link-active"><!----> <span class="site-name">📚Uncle小说</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/uncle-novel-official-site/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/download/" class="nav-link">
+  下载软件
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/sponsors/" class="nav-link">
+  赞助开发
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="使用指南" class="dropdown-title"><span class="title">使用指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="使用指南" class="mobile-dropdown-title"><span class="title">使用指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/pc/" class="nav-link">
+  电脑版
+</a></li><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/android/" class="nav-link">
+  安卓版
+</a></li></ul></div></div><div class="nav-item"><a href="/uncle-novel-official-site/booksource/" class="nav-link router-link-active">
+  书源教程
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/qa/" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/uncle-novel/uncle-novel-official-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    本站源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/uncle-novel-official-site/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/download/" class="nav-link">
+  下载软件
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/sponsors/" class="nav-link">
+  赞助开发
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="使用指南" class="dropdown-title"><span class="title">使用指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="使用指南" class="mobile-dropdown-title"><span class="title">使用指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/pc/" class="nav-link">
+  电脑版
+</a></li><li class="dropdown-item"><!----> <a href="/uncle-novel-official-site/guide/android/" class="nav-link">
+  安卓版
+</a></li></ul></div></div><div class="nav-item"><a href="/uncle-novel-official-site/booksource/" class="nav-link router-link-active">
+  书源教程
+</a></div><div class="nav-item"><a href="/uncle-novel-official-site/qa/" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/uncle-novel/uncle-novel-official-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    本站源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>书源教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/uncle-novel-official-site/booksource/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/uncle-novel-official-site/booksource/format.html" class="sidebar-link">书源格式</a></li><li><a href="/uncle-novel-official-site/booksource/rule-introduce.html" class="sidebar-link">四种规则写法</a></li><li><a href="/uncle-novel-official-site/booksource/search.html" aria-current="page" class="active sidebar-link">搜索规则写法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/search.html#搜索参数介绍" class="sidebar-link">搜索参数介绍</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/search.html#搜索参数的位置" class="sidebar-link">搜索参数的位置</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/search.html#搜索结果详情页写法" class="sidebar-link">搜索结果详情页写法</a></li><li class="sidebar-sub-header"><a href="/uncle-novel-official-site/booksource/search.html#例子" class="sidebar-link">例子</a></li></ul></li><li><a href="/uncle-novel-official-site/booksource/script.html" class="sidebar-link">预处理脚本</a></li><li><a href="/uncle-novel-official-site/booksource/replace.html" class="sidebar-link">替换净化规则</a></li><li><a href="/uncle-novel-official-site/booksource/advanced.html" class="sidebar-link">进阶写法</a></li><li><a href="/uncle-novel-official-site/booksource/skills.html" class="sidebar-link">常用功能教程</a></li><li><a href="/uncle-novel-official-site/booksource/debug.html" class="sidebar-link">书源调试</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="搜索参数介绍"><a href="#搜索参数介绍" class="header-anchor">#</a> 搜索参数介绍</h2> <table><thead><tr><th>名称</th> <th>类型</th> <th>含义</th> <th>必填</th></tr></thead> <tbody><tr><td>url</td> <td>String</td> <td>搜索链接</td> <td>是</td></tr> <tr><td>params</td> <td><a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/format.html#请求参数">请求参数</a></td> <td>请求参数</td> <td>否</td></tr> <tr><td>list</td> <td><a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/format.html#规则项">规则项</a></td> <td>搜索结果列表，匹配结果应该为节点列表</td> <td>是</td></tr> <tr><td>detailPage</td> <td><a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/format.html#规则项">规则项</a></td> <td>详情页链接规则</td> <td>否</td></tr> <tr><td>detail</td> <td><a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/format.html#详情规则">详情规则</a></td> <td>小说详情</td> <td>是</td></tr></tbody></table> <p>搜索规则中，<strong>必填项有 搜索链接，规则列表，标题，目录地址</strong>，不填写完整无法进行测试。</p> <h2 id="搜索参数的位置"><a href="#搜索参数的位置" class="header-anchor">#</a> 搜索参数的位置</h2> <p>可以定义关键词与页码参数。</p> <div><ul><li>关键词：<code>{{keyword}}</code></li> <li>页码：<code>{{page}}</code></li></ul></div><p>对于GET请求：</p> <div class="language- extra-class"><pre class="language-text"><code>https://xxx.com?page={{page}}&amp;kw={{keyword}}
+https://xxx.com/search_{{keyword}}/{{page}}
+</code></pre></div><p>对于POST表单或者JSON的，将参数放入请求体中。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token string">&quot;page={{page}}&amp;kw={{keyword}}&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div><ul><li>搜索参数中的<code>{{xxx}}</code>可以为<strong>脚本</strong>，比如可以填写 <code>{{page*100}}</code>，则会自动识别为脚本，并且会将页码乘以100再进行请求。</li></ul></div><ul><li><strong>搜索关键词编码</strong>：如果填写了<a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/format.html#请求参数">请求参数</a>中的编码字段，那么就会采用对应编码对搜索关键词进行unicode编码。</li></ul> <h2 id="搜索结果详情页写法"><a href="#搜索结果详情页写法" class="header-anchor">#</a> 搜索结果详情页写法</h2> <p>有时候小说详情信息直接在搜索结果页码就可以取到，有时候是个单独的详情页面，这个时候如果想要取到详情信息则需要查看本节。</p> <img src="https://cdn.unclezs.com/20210626224743.png" width="400"> <ol><li>编写<strong>详情页面</strong>规则，匹配结果为详情页URL（从搜索结果列表中）</li> <li>编写详情信息的各项规则时（标题、作者、封面等），需要通过page字段区分，规则是针对<strong>详情页面</strong>编写的还是针对搜索结果页面编写的，<code>page=detail</code>则代表<strong>详情页面</strong>的规则，<code>page=search</code>就代表搜索页的规则.</li> <li>如果<strong>详情页面</strong>规则未填写则默认从搜索结果页(search)匹配</li></ol> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xpath:/body/div[3]/ul&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;page&quot;</span><span class="token operator">:</span> <span class="token string">&quot;search 或者 detail&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>总的来说：</p> <ul><li>如果规则是基于搜索结果的列表的，那么需要将规则中的page写为search。并且规则是基于搜索结果列表节点的<strong>相对规则</strong>。</li> <li>如果规则是基于自定义详情页面的，那么需要将规则中的page写为detail（或者不写）。并且规则是基于详情页的规则。</li></ul> <p><strong>注意</strong></p> <ol><li><p>如果<code>page=search</code>时，编写的详情规则（标题、作者、封面等）时，需要时相对于搜索结果列表节点的相对规则，如：目录规则匹配了所有a标签，那么规则应该针对a标签编写：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xpath://div//a&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;page&quot;</span><span class="token operator">:</span> <span class="token string">&quot;search&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@href&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>注意此处的详情规则是搜索规则中的小说信息的规则，不是<a href="/uncle-novel-official-site/uncle-novel-official-site/booksource/format.html#详情规则">详情规则</a>。</p></li></ol> <h2 id="例子"><a href="#例子" class="header-anchor">#</a> 例子</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;search&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;params&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://m.xxx.net/s.php&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;method&quot;</span><span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;charset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GBK&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/x-www-form-urlencoded&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token string">&quot;type=articlename&amp;s={{keyword}}&amp;submit=&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//p[@class=\&quot;line\&quot;]&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;detailPage&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;///a[2]/@href &quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;detail&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;page&quot;</span><span class="token operator">:</span> <span class="token string">&quot;search&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xpath&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/a[2]/@href&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;page&quot;</span><span class="token operator">:</span> <span class="token string">&quot;search&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xpath&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//div[@class=\&quot;block_txt2\&quot;]/h2/a/text()&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;page&quot;</span><span class="token operator">:</span> <span class="token string">&quot;search&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xpath&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//div[@class=\&quot;block_txt2\&quot;]/p[3]/text()&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xpath&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//div[@class=\&quot;block_txt2\&quot;]/p[4]/a/text()&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;introduce&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xpath&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;rule&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//div[@class=\&quot;intro_info\&quot;]/text()&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/uncle-novel/uncle-novel-official-site/edit/main/docs/booksource/search.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2/16/2023, 11:46:59 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/uncle-novel-official-site/booksource/rule-introduce.html" class="prev">
+        四种规则写法
+      </a></span> <span class="next"><a href="/uncle-novel-official-site/booksource/script.html">
+        预处理脚本
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/uncle-novel-official-site/assets/js/app.36db7c0a.js" defer></script><script src="/uncle-novel-official-site/assets/js/2.705b7372.js" defer></script><script src="/uncle-novel-official-site/assets/js/1.527d975e.js" defer></script><script src="/uncle-novel-official-site/assets/js/31.5ef9ea15.js" defer></script>
+  </body>
+</html>
