@@ -3,7 +3,7 @@
 # url:blog.unclezs.com
 set -e
 # 编译 上传到 page分支进行自动部署
-yarn run build
+pnpm build
 cd docs/.vuepress/dist
 git init
 echo "uncle novel official pages" > README.md
