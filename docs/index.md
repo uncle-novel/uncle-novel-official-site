@@ -5,7 +5,7 @@ heroText: Uncle 小说
 tagline: QQ交流群：955549674
 actionText: 使用指南 →
 actionLink: /guide/pc/
-footer: Copyright © 2018-2025 Unclezs | 渝ICP备18013963号-2
+footer: Copyright © 2018-2025 uncle-novel
 ---
 
 <div class="features">
